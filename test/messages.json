@@ -1,0 +1,36 @@
+[{
+    "description": "kernel_info_request",
+    "request": {
+        "shell": {
+            "header": {
+                "msg_type": "kernel_info_request"
+            }
+        }
+    },
+    "responses": [{
+        "shell": {
+            "header": {
+                "msg_type": "kernel_info_reply"
+            }
+        }
+    }]
+}, {
+    "description": "history_request",
+    "request": {
+        "shell": {
+            "header": {
+                "msg_type": "history_request"
+            }
+        }
+    },
+    "responses": [{
+        "shell": {
+            "header": {
+                "msg_type": "history_reply"
+            },
+            "content": {
+                "history": []
+            }
+        }
+    }]
+}]

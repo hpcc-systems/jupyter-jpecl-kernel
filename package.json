@@ -1,0 +1,44 @@
+{
+  "name": "jpecl-kernel",
+  "version": "0.1.0",
+  "description": "Generic Node.js kernel for the Jupyter notebook",
+  "keywords": [
+    "kernel",
+    "ipython",
+    "jupyter",
+    "jpecl-kernel",
+    "ijsecl"
+  ],
+  "homepage": "https://github.com/hpcc-systems/jupyter-jpecl-kernel#readme",
+  "bugs": {
+    "url": "https://github.com/hpcc-systems/jupyter-jpecl-kernel/issues"
+  },
+  "license": "BSD-3-Clause",
+  "author": "Xiaoming Wang",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hpcc-systems/jupyter-jpecl-kernel.git"
+  },
+  "dependencies": {
+    "jmp": "^0.7.2",
+    "nel": "0.5.x"
+  },
+  "devDependencies": {
+    "debug": "latest",
+    "jsdoc": "latest",
+    "jshint": "latest",
+    "mocha": "3",
+    "uuid": "3"
+  },
+  "scripts": {
+    "doc": "jsdoc -R README.md -d docs index.js lib",
+    "lint": "jshint index.js lib/ test/",
+    "test:mocha": "mocha",
+    "test": "npm run lint && npm run test:mocha"
+  },
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
+}
